@@ -1,0 +1,141 @@
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+width: 20px;
+}
+
+.cursor {
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f44336;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.cursor__follower {
+  transition: transform .4s;
+  width: 6px;
+  height: 6px;
+}
+
+.ui {
+  width: 700px;
+  height: 400px;
+}
+
+.vidyut {
+  width: 50px;
+  height: 50px;
+}
+
+.cisai {
+  width: 90px;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background-color: #2d2b2b;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 999;
+  width: -webkit-fill-available;
+}
+
+.first-logo {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.second-logo {
+  flex-grow: 3.3;
+}
+
+html {
+  text-decoration: none;
+  background-color: #2d2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: 'Waiting for the Sunrise', cursive;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red }
+}
+
+section {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  height: 100vh;
+}
+
+.first {
+  cursor: none;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 50px;
+}
+
+span, p {
+  font-size: 20px;
+}

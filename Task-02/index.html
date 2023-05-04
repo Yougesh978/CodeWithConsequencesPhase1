@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+   <header>
+    <nav>
+      <div class="first-logo">
+        <img src="imgs/innspark.png" alt="" class="cisai">
+        <img src="imgs/CISAI logo_v3.png" alt="" class="cisai">
+        <img src="imgs/c_cube.png" alt="" class="vidyut">
+    </div>
+    <div class="second-logo">
+        <img src="imgs/vidyut.png" alt="" class="vidyut">
+    </div>
+    </nav> 
+  </header>
+  <section class="first"> 
+    <h2>Welcome to the</h2>
+    <div class="typewriter">
+      <h1>"Code With Consequences"</h1>
+    </div>
+    <span>Scroll down for task description ↓</span>
+  </section> 
+  <section class="second">
+    <h2>Task description</h2>
+    <p>
+        Here one slider changes the size of the word "Aum", similiarly. 
+        Add three more slider controls, each with a ranging from 0 to 255 (eg. 1st slider takes R value, 2nd takes G & 3rd takes B value.), to pick an RGB colour code and apply this colour code to the colour of the font used to display the text 'AUM NAMAH SHIVAYA'.
+        <br><br>
+        Remember, Evaulation will be done only on the basis of creativity, but not on the basis of completing the given tasks. So, try to be creative as much as you can.
+    </p>
+    <div class="main">
+      <div id="color-sliders">
+        <div>
+          <label for="blue-slider">Size :</label>
+          <input type="range" id="slider" min="1" max="9" value=2 onchange="update(this.value);">
+        </div>
+        <div>
+          <label for="red-slider">Red &nbsp;:</label>
+<!--          Todo: Add a slider here (Note: id="red-slider")-->
+          <input type="range" id="red-slider" min="0" max="255" value=255 onchange="updateColor();">
+        </div>
+        <div>
+          <label for="green-slider">Green:</label>
+<!--          Todo: Add a slider here (Note: id="green-slider")-->
+          <input type="range" id="green-slider" min="0" max="255" value=255 onchange="updateColor();">
+        </div>
+        <div>
+          <label for="blue-slider">Blue :</label>
+<!--          Todo: Add a slider here (Note: id="blue-slider")-->
+          <input type="range" id="blue-slider" min="0" max="255" value=255 onchange="updateColor();">
+        </div>
+      </div>
+      <div id="wrapper">
+        <div>
+          <span id="work">AUM </span><span id="life">NAMAH</span>
+        </div>
+        <div id="balance">SHIVAYA!</div>
+      </div>
+  </div>
+           
+  </section>
+  <script  src="script.js"></script>
+</body>
+</html>

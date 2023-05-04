@@ -1,0 +1,254 @@
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+.cursor {
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f44336;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.cursor__follower {
+  transition: transform 0.4s;
+  width: 6px;
+  height: 6px;
+}
+
+.vidyut {
+  width: 50px;
+  height: 50px;
+}
+
+.cisai {
+  width: 90px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background-color: #2d2b2b;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 999;
+  width: -webkit-fill-available;
+}
+
+.first-logo {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.second-logo {
+  flex-grow: 3.3;
+}
+
+html {
+  text-decoration: none;
+  background-color: #2d2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: "Waiting for the Sunrise", cursive;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
+section {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  height: 100vh;
+}
+
+.first {
+  cursor: none;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 50px;
+}
+
+span,
+p {
+  font-size: 20px;
+}
+
+.calculator {
+  width: 350px;
+  height: 320px;
+  background-color: #c0c0c0;
+  box-shadow: 0px 0px 0px 10px #666;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+#display {
+  width: 320px;
+  height: 40px;
+  text-align: right;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 18px;
+  left: 2px;
+  top: 2px;
+  color: white;
+}
+.btnTop {
+  color: white;
+  background-color: #6f6f6f;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+.btnNum {
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+.btnMath {
+  color: white;
+  background-color: #ff4561;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+.btnOpps {
+  color: white;
+  background-color: #ff9933;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.themeSwitchButton {
+  border-radius: 5px;
+  background-color: #474646;
+  color: #c5c5c5;
+  border: none;
+  box-shadow: #2d2b2b;
+  padding: 2px 7px;
+  margin-bottom: 1rem;
+  height: 3rem;
+  width: 15rem;
+  font-size: medium;
+  font-weight: bold;
+}
+
+/*Todo: write css for .themeSwitchButton:hover*/
+.themeSwitchButton:hover {
+  color: yellow;
+  background-color: #202020;
+  cursor: pointer;
+}
+
+/*Todo: postion the wrapper for the buttons to position them on the left side of the calculator*/
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+  position: left;
+}
+
+
+.dark {
+  background-color: #2d2b2b;
+}
+
+.darkBtnTop {
+  background-color: #6a6969;
+  color: #dad7d7;
+}
+
+.darkBtnNum {
+  background-color: #2d2b2b;
+  color: #dad7d7;
+}
+
+.darkBtnColorGeneric {
+  color: #f1f0f0;
+}
+
+.log {
+  background-color: #675555;
+}
